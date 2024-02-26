@@ -1,0 +1,17 @@
+tecnologias usaddas
+
+
+astro
+html
+css
+js
+tailwind
+
+animate.css
+flowbite
+invariant
+
+
+
+
+first mobil
