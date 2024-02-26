@@ -2,13 +2,22 @@
 import Chat from './Chat.astro'
 ---
 
-<div class="h-[90%] flex items-center border-4 m-5 rounded-3xl border-white bg-position-center bg-size-auto bg-cover bg-opacity-50 bg-image " style="background-image: url('../../public/explosion-purple-dry-color-black-background_23-2148054173.jpg');">
+<div class="h-[90%] flex items-center border-4 m-5 rounded-3xl border-white bg-position-center bg-size-auto bg-cover bg-opacity-50 bg-image " style="background-image: url('https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/explosion-purple-dry-color-black-background_23-2148054173.jpg?alt=media&token=ba9b3d36-a8b1-4642-abb2-038c407a6b7f');">
     <div class="lg:w-[80%] xl:w-[60%] ">
-        <h2 class=" hidden sm:flex text-lg  sm:text-3xl lg:text-6xl xl:text-7xl m-10 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 font-extrabold ">ABOUT ME . . . </h2>
+        <div class="flex items-center ms-5">
+            <img src="https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/galaxy2.png?alt=media&token=ef723c52-9ec5-41dc-973d-7c71490a98c6" class="w-20 h-20 " alt="galaxy icon">
+            <h2 class=" hidden sm:flex text-lg  sm:text-3xl lg:text-6xl xl:text-7xl ms-4 my-10 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 font-extrabold ">ABOUT ME . . . </h2>
+        </div>
     <Chat />
     </div>
     <div class="justify-center items-center  ">
-        <img src="../../public/alien.png" class="hidden lg:flex w-full lg:w-[20rem] xl:w-[30rem]  " alt="">
+        <!-- <img src="../../public/alien.png" class="hidden lg:flex w-full lg:w-[20rem] xl:w-[30rem]  " alt=""> -->
+
+        <div class="relative hover:opacity-70 lg:flex h-auto w-full lg:w-[20rem] ">
+            <img id='img1' src="https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/alien.png?alt=media&token=9fd63c48-49ca-4f53-b38b-6e41524e3170" class="hidden lg:flex w-full lg:w-[15rem] xl:w-[20rem]" alt="Imagen 1" class="block w-full h-auto transition-opacity duration-300 cursor-pointer ">
+            <img id='img2' src="https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/foto.png?alt=media&token=b01c5e52-43e8-4528-94a8-63a1b9287847" alt="Imagen 2" class="absolute top-0 left-0 w-full h-full opacity-0 transition-opacity duration-300 pointer-events-auto hover:opacity-100 rounded-3xl">
+        </div>
+        
         
     </div>
 </div>
