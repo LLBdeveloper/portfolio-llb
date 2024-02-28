@@ -3,49 +3,58 @@ import CarouselProjects from './CarouselProjects.astro'
 ---
 <div class="h-full w-full justify-center items-center flex border-4 border-neutral-800 rounded-3xl bg-position-center bg-size-auto bg-cover bg-opacity-50 bg-image " style="background-image: url('https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/creative-geometric-design-space_53876-89781.jpg?alt=media&token=bd250b4c-b1e7-44e1-b016-fc2094070b84');">
 
-    <div class='border-teal-400  border-4 rounded-3xl p-10 bg-opacity-95 bg-black'>
+    <div class='border-teal-400 p-20 border-4 rounded-3xl bg-opacity-95 bg-black'>
         <div class="flex justify-start mx-5">
             <img src="https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/galaxy2.png?alt=media&token=ef723c52-9ec5-41dc-973d-7c71490a98c6" class="w-20 h-20 me-5" alt="">
             <h2 class=" text-lg  md:text-3l lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 font-extrabold ">MY JOBS . . . </h2>
-        </div>
-        <div class="flex justify-center items-center p-5 ">
-            <figure class="mx-5 relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 ">
-                <a href="#">
-                    <img class="rounded-lg" src="https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/projects%2Fwebmaster.png?alt=media&token=bea4a3ec-b4ed-4cf9-9cf4-ef373a21d32c" alt="image description">
-                </a>
-                <figcaption class="absolute px-4 text-2xl text-black font-bold bottom-6">
-                    <p>WEBMASTER STUDIO</p>
-                </figcaption>
-            </figure>
-            
-            <figure class="mx-5 relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 ">
-                <a href="#">
-                    <img class="rounded-lg" src="https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/projects%2Fsurfclub.png?alt=media&token=8c021362-da58-4eb0-9034-96d9f2242502" alt="image description">
-                </a>
-                <figcaption class="absolute px-4 text-2xl text-black font-bold bottom-6 text-center">
-                    <p >SURF CLUB</p>
-                </figcaption>
-            </figure>
-        </div>
-        <!-- <div class="flex justify-end">
-            <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 ">
-                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-black dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 ">
+            <!-- <button class="mx-auto relative inline-flex items-center justify-center p-1 mb-2 me-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
+                <span class=" h-[5rem] flex justify-center items-center relative px-5 py-2.5 transition-all ease-in duration-75 bg-black dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                 SEE MORE !
                 </span>
-            </button>
+            </button> -->
+
+        </div>
+        <div class="flex justify-center items-end">
+            <div class="flex justify-center items-center p-5 ">
+                <figure class="mx-5 relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 ">
+                    <a href="https://webmasterstudio.com.ar/" target="_blank">
+                        <img class="rounded-lg" src="https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/projects%2Fwebmaster.png?alt=media&token=bea4a3ec-b4ed-4cf9-9cf4-ef373a21d32c" alt="image description">
+                    </a>
+                    <figcaption class="absolute px-4 text-2xl text-black font-bold bottom-6">
+                        <p>WEBMASTER STUDIO</p>
+                    </figcaption>
+                </figure>
+                
+                <figure class="mx-5 relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 ">
+                    <a href="https://surfclub.com.ar/" target="_blank">
+                        <img class="rounded-lg" src="https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/projects%2Fsurfclub.png?alt=media&token=8c021362-da58-4eb0-9034-96d9f2242502" alt="image description">
+                    </a>
+                    <figcaption class="absolute px-4 text-2xl text-black font-bold bottom-6 text-center">
+                        <p >SURF CLUB</p>
+                    </figcaption>
+                </figure>
+    
+                
+            </div>
+            <div class="">
+                <a href="/MoreProjects" class="mx-auto relative inline-flex items-center justify-center p-1 mb-2 me-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
+                    <span class=" h-[5rem] text-xl font-bold flex justify-center items-center relative px-5 py-2.5 transition-all ease-in duration-75 bg-black dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                    SEE MORE !
+                    </span>
+                </a>
+            </div>
+        </div>
+    
+        <!-- <div class="w-full flex justify-center">
+            <CarouselProjects/>
+            <div>
+                
+            </div>
         </div> -->
     
-
-
-        <div class="w-full flex justify-center">
-            <CarouselProjects/>
-        </div>
-        
-        
-
-
     </div>
     
+
     
     
     

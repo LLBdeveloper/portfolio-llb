@@ -6,6 +6,8 @@ import Header from '../components/Header.astro'
 import About from '../components/About.astro'
 import Technologies from '../components/Technologies.astro'
 import Projects from '../components/Projects.astro'
+import Contact from '../components/Contact.astro'
+
 
 ---
 <Layout title="Welcome to Astro.">
@@ -19,7 +21,7 @@ import Projects from '../components/Projects.astro'
 			<StarsNow/>
 		</section>
 		
-		<section id="about" class="w-full h-screen bg-black pt-20 snap-center ">
+		<section id="about" class="w-full h-screen bg-black pt-10 sm:pt-20 snap-center ">
 			<About/>
 		</section>
 		
@@ -31,8 +33,13 @@ import Projects from '../components/Projects.astro'
 			<Projects/>
 		</section>
 
+		<section id="contact" class="w-full h-screen mt-5  bg-black snap-center pt-20 justify-center items-center flex ">
+			<Contact/>
+		</section>
+
 		<footer class="snap-center">
 			<Footer />
+			
 		</footer>
 
 	</main>
