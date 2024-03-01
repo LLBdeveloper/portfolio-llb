@@ -2,7 +2,7 @@
 import Chat from './Chat.astro'
 ---
 
-<div class="h-[90%] flex items-center border-4 m-5 rounded-3xl border-white bg-position-center bg-size-auto bg-cover bg-opacity-50 bg-image " style="background-image: url('https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/explosion-purple-dry-color-black-background_23-2148054173.jpg?alt=media&token=ba9b3d36-a8b1-4642-abb2-038c407a6b7f');">
+<div class="h-[90%] overflow-hidden flex items-center border-4 m-5 rounded-3xl border-white bg-position-center bg-size-auto bg-cover bg-opacity-50 bg-image " style="background-image: url('https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/explosion-purple-dry-color-black-background_23-2148054173.jpg?alt=media&token=ba9b3d36-a8b1-4642-abb2-038c407a6b7f');">
     <div class="  ">
         <div class="flex items-center ms-5">
             <img src="https://firebasestorage.googleapis.com/v0/b/portfolioreacttailwind.appspot.com/o/galaxy2.png?alt=media&token=ef723c52-9ec5-41dc-973d-7c71490a98c6" class="w-20 h-20 hidden sm:flex" alt="galaxy icon">
@@ -30,7 +30,7 @@ import Chat from './Chat.astro'
                 MORE ABOUT ME !
             </span>
         </a>
-        <button class="relative inline-flex items-center justify-center p-1 mb-2 me-2 overflow-hidden text-xl font-medium text-white rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 ">
+        <button id="downloadButton" class="relative inline-flex items-center justify-center p-1 mb-2 me-2 overflow-hidden text-xl font-medium text-white rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 ">
             <span class="flex items-center w-[15rem] relative px-5 py-2.5 transition-all ease-in duration-75 bg-black dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 "><svg class="w-9 h-9 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
                 <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
@@ -41,7 +41,30 @@ import Chat from './Chat.astro'
     </div>
 </div>
 
+<script>
 
+document.getElementById("downloadButton").addEventListener("click", function() {
+    // URL del archivo PDF
+    var fileUrl = "/public/cv-frontEnd.pdf";
+    
+    // Nombre del archivo que se mostrará al descargar
+    var fileName = "cv-frontEnd.pdf";
+    
+    // Crear un elemento <a> temporal para iniciar la descarga
+    var a = document.createElement("a");
+    a.href = fileUrl;
+    a.download = fileName;
+    
+    // Agregar el elemento <a> al cuerpo del documento
+    document.body.appendChild(a);
+    
+    // Simular un clic en el enlace para iniciar la descarga
+    a.click();
+    
+    // Eliminar el elemento <a> después de la descarga
+    document.body.removeChild(a);
+});
+</script>
 
 
 
